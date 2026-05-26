@@ -1,0 +1,76 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    background: #87CEEB; 
+    font-family: 'Arial', sans-serif; 
+}
+
+canvas { 
+    display: block; 
+}
+
+#ui {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    color: white;
+    background: rgba(0,0,0,0.7); 
+    padding: 15px; 
+    border-radius: 12px;
+    border: 2px solid #4CAF50; 
+    pointer-events: none; 
+    z-index: 10;
+}
+
+.modal {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 20px; 
+    text-align: center;
+    border: 6px solid #2E7D32; 
+    display: none; 
+    z-index: 100; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    max-width: 450px;
+}
+
+.tutorial-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+    margin: 20px 0;
+    text-align: left; 
+    font-size: 14px; 
+    background: #f9f9f9; 
+    padding: 15px; 
+    border-radius: 10px;
+}
+
+button { 
+    background: #2E7D32; 
+    color: white; 
+    border: none; 
+    padding: 15px 40px; 
+    cursor: pointer; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    font-weight: bold;
+    box-shadow: 0 4px #1b5e20;
+}
+
+button:active {
+    box-shadow: 0 2px #1b5e20;
+    transform: translateY(2px);
+}
+
+.key { 
+    background: #ddd; 
+    padding: 2px 6px; 
+    border-radius: 4px; 
+    border: 1px solid #999; 
+}

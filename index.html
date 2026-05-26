@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroEco Quest: Pulo Ajustado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ui">
+    <b>FASE: <span id="lvlDisplay">1</span></b><br>
+    🗑️: <span id="score">0</span> / <span id="total">0</span><br>
+    ⭐ Pontos: <span id="foodScore">0</span><br>
+    ❤️ Vidas: <span id="lives">3</span>
+</div>
+
+<div id="msg" class="modal" style="display: block;">
+    <h2 id="statusTitle" style="margin-top:0; color:#2E7D32;">COMO JOGAR</h2>
+    <div id="tutorialContent">
+        <div class="tutorial-grid">
+            <div><span class="key">⬅️</span> <span class="key">➡️</span> Mover</div>
+            <div><span class="key">⬆️</span> Pular</div>
+            <div>🗑️ <b>Lixo:</b> Pegue todos</div>
+            <div>🌽🥕 <b>Bônus:</b> Ganhe pontos</div>
+            <div>👾 <b>Mutante:</b> Pule em cima</div>
+            <div>💩 <b>Tiro:</b> Desvie!</div>
+        </div>
+        <p style="font-size: 13px; color: #666;">Pise no <b>botão vermelho</b> para abrir o portão cinza!</p>
+    </div>
+    <p id="statusDesc" style="display:none;"></p>
+    <button id="btnStart" onclick="startLevel()">ENTRAR NO CAMPO</button>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
