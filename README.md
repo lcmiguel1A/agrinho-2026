@@ -1,2 +1,45 @@
 # agrinho-2026
-🎮 Objetivo PrincipalO jogador precisa limpar o campo e encontrar a saída. Para avançar de fase, é necessário:Coletar todo o lixo (🗑️) espalhado pelo cenário.Ativar um botão vermelho que abre o portão cinza (a saída da fase).🕹️ Mecânicas e ControlesMovimentação: O jogador se move para os lados usando as setas esquerda/direita ($\leftarrow$ $\rightarrow$) e pula usando a seta para cima ($\uparrow$).Combate: Para derrotar os inimigos ("Mutantes" 👾), o jogador deve utilizar a clássica mecânica de pular em cima deles.Sobrevivência: O jogador começa com 3 vidas ❤️ e deve desviar dos projéteis inimigos ("Tiros de cocô" 💩).🧺 Coletáveis e PontuaçãoLixo (🗑️): Contador obrigatório. A interface mostra quantos foram coletados e o total necessário para vencer a fase (Ex: 0 / 5).Comida (🌽🥕): Itens bônus (milho e cenoura) que servem para aumentar a pontuação de estrelas (⭐) do jogador, mas provavelmente não são obrigatórios para passar de fase.🖥️ Estrutura Visual (Interface)O jogo roda inteiramente dentro de um elemento <canvas> (onde a mágica dos gráficos acontece via JavaScript) e possui uma interface de usuário (UI) fixa que exibe:O nível atual (Fase).O progresso da coleta de lixo.Os pontos de bônus acumulados.A quantidade de vidas restantes.Antes do jogo começar, há uma tela de boas-vindas/tutorial (Modal) que explica as regras e só libera o jogo quando o usuário clica no botão "ENTRAR NO CAMPO".
+# 🌾 AgroEco Quest: Pulo Ajustado
+
+O **AgroEco Quest: Pulo Ajustado** é um jogo de plataforma 2D com temática ecológica e agrícola desenvolvido para navegadores. O objetivo do projeto é aliar mecânicas clássicas de jogos de plataformas com a conscientização sobre a preservação ambiental e a limpeza dos campos de cultivo.
+
+## 🎮 Como Funciona o Jogo
+
+O jogo funciona num ciclo tradicional de plataforma onde o jogador precisa explorar o cenário, cumprir objetivos ecológicos e encontrar a saída para avançar de nível.
+
+### 🚀 Objetivo Principal
+Para completar uma fase, o jogador deve:
+1. **Recolher todo o lixo** (🗑️) espalhado pelo mapa.
+2. **Ativar o mecanismo de saída:** Pisar num **botão vermelho** para abrir o portão cinza (fim da fase).
+
+---
+
+## 🕹️ Mecânicas e Controlos
+
+* **Movimentação:**
+  * `⬅️` / `➡️` : Mover o personagem para a esquerda e para a direita.
+  * `⬆️` : Saltar (mecanismo central do jogo).
+* **Combate / Defesa:**
+  * 👾 **Mutantes:** Os inimigos do jogo podem ser derrotados ao **saltar em cima deles** (estilo clássico *Mario Bros*).
+  * 💩 **Projéteis:** O jogador deve esquivar-se dos tiros de "cocó" lançados pelos inimigos para não perder vida.
+* **Sistema de Vidas:** O jogador inicia a partida com **3 vidas** (`❤️`). Se forem a zero, o jogo termina.
+
+---
+
+## 🧺 Elementos e Itens do Jogo
+
+| Elemento | Ícone | Função |
+| :--- | :---: | :--- |
+| **Lixo** | 🗑️ | Item obrigatório. É necessário recolher todos para abrir a fase. |
+| **Bónus (Milho/Cenoura)** | 🌽🥕 | Itens opcionais. Concedem pontos de Estrela (⭐) para aumentar a pontuação final. |
+| **Mutante** | 👾 | Inimigo da fase. Deve ser eliminado ou evitado. |
+| **Botão Vermelho** | 🔴 | Interruptor que desbloqueia o portão de saída. |
+
+---
+
+## 🛠️ Estrutura Técnica do Projeto
+
+O projeto é construído de forma leve e nativa para a web, dividido em três ficheiros principais:
+* **`index.html`:** Estrutura o ecrã do jogo, a interface de utilizador (UI) e o menu/tutorial inicial.
+* **`style.css`:** Define o aspeto visual do jogo, o posicionamento da UI e o estilo responsivo do menu modal.
+* **`script.js`:** Contém o motor do jogo através da API `Canvas`, gerindo a física dos saltos, colisões, lógica de pontuação e comportamento dos inimigos.
